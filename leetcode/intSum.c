@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>// for malloc
 int* twoSum(const int* nums, int numsSize, int target, int* returnSize) {
-    int *returnArray = malloc(2 * sizeof(int));
+    int *returnArray = malloc(2 * sizeof(int));//malloc for a dynamic size of the return array
     returnArray[0] = 1;
     returnArray[1] = 1;
     for (int i = 0; i < numsSize; ++i) {
