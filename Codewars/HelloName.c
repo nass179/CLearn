@@ -4,6 +4,7 @@
 #include <ctype.h>
 
 char *hello(const char *name) {
+    if(!isalpha(name[0])) return "Hello, World!";
     int len =strlen(name);
     if((name != NULL) && (name[0] == '\0')) return "Hello, World!";
     for (int i = 0; i < len; ++i) {
@@ -23,6 +24,7 @@ char *hello(const char *name) {
     return hello;
 }
 int main(){
-    char *name = "lHDJDJ";
+    char *name = "jOHN";
+    free(name);
     printf("%s", hello(name));
 }
