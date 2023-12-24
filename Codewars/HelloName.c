@@ -4,8 +4,9 @@
 #include <ctype.h>
 
 char *hello(const char *name) {
-    int len =strlen(name);
-    if((name != NULL) && (name[0] == '\0')) return "Hello, World!";
+    if(name == NULL) return "Hello, World";
+    int len =(int) strlen(name);
+    if(name[0] == '\0') return "Hello, World!";
     for (int i = 0; i < len; ++i) {
         if(!isalpha(name[i])) return "Hello, World!";
     }
@@ -16,17 +17,18 @@ char *hello(const char *name) {
             n[0] <<= 3;
             n[0] >>= 3;
             n[0] |= 0b01000000;
-            for (int i = 1; i < len; ++i) {
-                n[i] = name[i] | 0b01100000;
+            for (int j = 1; j < len; ++j) {
+                n[j] |= 0b01100000;
             }
-            char *hello = malloc(12 * sizeof(char));
+            char *hello = malloc(7 * sizeof(char) + sizeof(n));
             sprintf(hello, "Hello, %s!", n);//  <----  hajime!
             return hello;
         }
     }
+    return "Hello, World!";
 }
 int main(){
-    char *name;
-    name = "jHON";
+    char *name = "jHON";
+    //free(name);
     printf("%s", hello(name));
 }
