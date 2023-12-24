@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Codewars::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Codewars-Debug-cd53949af61337891cc0.json",
+					"jsonFile" : "target-Codewars-Debug-b2aa1233aca5007567f0.json",
 					"name" : "Codewars",
 					"projectIndex" : 0
 				}
@@ -55,6 +55,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 6
 	}
 }
