@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/shann/Desktop/C/CLearn/Codewars/SameCaseCheck.c" "CMakeFiles/Codewars.dir/SameCaseCheck.c.obj" "gcc" "CMakeFiles/Codewars.dir/SameCaseCheck.c.obj.d"
+  "C:/Users/shann/Desktop/C/CLearn/Codewars/genRaangeofInt.c" "CMakeFiles/Codewars.dir/genRaangeofInt.c.obj" "gcc" "CMakeFiles/Codewars.dir/genRaangeofInt.c.obj.d"
   "C:/Users/shann/Desktop/C/CLearn/Codewars/main.c" "CMakeFiles/Codewars.dir/main.c.obj" "gcc" "CMakeFiles/Codewars.dir/main.c.obj.d"
   "C:/Users/shann/Desktop/C/CLearn/Codewars/removeExclamation.c" "CMakeFiles/Codewars.dir/removeExclamation.c.obj" "gcc" "CMakeFiles/Codewars.dir/removeExclamation.c.obj.d"
   )

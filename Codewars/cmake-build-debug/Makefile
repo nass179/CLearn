@@ -152,6 +152,30 @@ SameCaseCheck.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/SameCaseCheck.c.s
 .PHONY : SameCaseCheck.c.s
 
+genRaangeofInt.obj: genRaangeofInt.c.obj
+.PHONY : genRaangeofInt.obj
+
+# target to build an object file
+genRaangeofInt.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/genRaangeofInt.c.obj
+.PHONY : genRaangeofInt.c.obj
+
+genRaangeofInt.i: genRaangeofInt.c.i
+.PHONY : genRaangeofInt.i
+
+# target to preprocess a source file
+genRaangeofInt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/genRaangeofInt.c.i
+.PHONY : genRaangeofInt.c.i
+
+genRaangeofInt.s: genRaangeofInt.c.s
+.PHONY : genRaangeofInt.s
+
+# target to generate assembly for a file
+genRaangeofInt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/genRaangeofInt.c.s
+.PHONY : genRaangeofInt.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo ... SameCaseCheck.obj
 	@echo ... SameCaseCheck.i
 	@echo ... SameCaseCheck.s
+	@echo ... genRaangeofInt.obj
+	@echo ... genRaangeofInt.i
+	@echo ... genRaangeofInt.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
