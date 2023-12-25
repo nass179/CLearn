@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Codewars.dir/SameCaseCheck.c.obj.d"
   "CMakeFiles/Codewars.dir/main.c.obj"
   "CMakeFiles/Codewars.dir/main.c.obj.d"
+  "CMakeFiles/Codewars.dir/removeExclamation.c.obj"
+  "CMakeFiles/Codewars.dir/removeExclamation.c.obj.d"
   "Codewars.exe"
   "Codewars.exe.manifest"
   "Codewars.pdb"

@@ -176,6 +176,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/main.c.s
 .PHONY : main.c.s
 
+removeExclamation.obj: removeExclamation.c.obj
+.PHONY : removeExclamation.obj
+
+# target to build an object file
+removeExclamation.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/removeExclamation.c.obj
+.PHONY : removeExclamation.c.obj
+
+removeExclamation.i: removeExclamation.c.i
+.PHONY : removeExclamation.i
+
+# target to preprocess a source file
+removeExclamation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/removeExclamation.c.i
+.PHONY : removeExclamation.c.i
+
+removeExclamation.s: removeExclamation.c.s
+.PHONY : removeExclamation.s
+
+# target to generate assembly for a file
+removeExclamation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/removeExclamation.c.s
+.PHONY : removeExclamation.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... removeExclamation.obj
+	@echo ... removeExclamation.i
+	@echo ... removeExclamation.s
 .PHONY : help
 
 

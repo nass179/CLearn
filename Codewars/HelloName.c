@@ -35,12 +35,12 @@ char *hello(const char *name) {
 //Does Work
 char *hello(const char *name) {
     int len = (int) strlen(name);
-    unsigned char *str = malloc(100);
+    unsigned char *str; //= malloc(sizeof(char));
     strcpy(str, "Hello, ");
     if (len){
         strcat(str, name);
         str[7] <<= 3;
-        str[7] >>= 3;
+        str[7] >>= 3;//logical shift only works with unsigned
         str[7] |= 0b01000000;
         for (int i = 1; i < len; i++) {
             str[i + 7] |= 0b01100000;
@@ -54,4 +54,5 @@ int main(){
     char *name = "wAYN";
     //free(name);
     printf("%s", hello(name));
+    return 0;
 }

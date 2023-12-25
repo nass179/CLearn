@@ -82,6 +82,9 @@
 		<Unit filename="C:/Users/shann/Desktop/C/CLearn/Codewars/main.c">
 			<Option target="Codewars"/>
 		</Unit>
+		<Unit filename="C:/Users/shann/Desktop/C/CLearn/Codewars/removeExclamation.c">
+			<Option target="Codewars"/>
+		</Unit>
 		<Unit filename="C:/Users/shann/Desktop/C/CLearn/Codewars/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
