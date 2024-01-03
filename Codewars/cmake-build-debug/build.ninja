@@ -61,6 +61,24 @@ build CMakeFiles/Codewars.dir/SameCaseCheck.c.obj: C_COMPILER__Codewars_Debug C$
   OBJECT_DIR = CMakeFiles\Codewars.dir
   OBJECT_FILE_DIR = CMakeFiles\Codewars.dir
 
+build CMakeFiles/Codewars.dir/removeExclamation.c.obj: C_COMPILER__Codewars_Debug C$:/Users/shann/Desktop/C/CLearn/Codewars/removeExclamation.c || cmake_object_order_depends_target_Codewars
+  DEP_FILE = CMakeFiles\Codewars.dir\removeExclamation.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\Codewars.dir
+  OBJECT_FILE_DIR = CMakeFiles\Codewars.dir
+
+build CMakeFiles/Codewars.dir/genRaangeofInt.c.obj: C_COMPILER__Codewars_Debug C$:/Users/shann/Desktop/C/CLearn/Codewars/genRaangeofInt.c || cmake_object_order_depends_target_Codewars
+  DEP_FILE = CMakeFiles\Codewars.dir\genRaangeofInt.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\Codewars.dir
+  OBJECT_FILE_DIR = CMakeFiles\Codewars.dir
+
+build CMakeFiles/Codewars.dir/isThisaTriangle.c.obj: C_COMPILER__Codewars_Debug C$:/Users/shann/Desktop/C/CLearn/Codewars/isThisaTriangle.c || cmake_object_order_depends_target_Codewars
+  DEP_FILE = CMakeFiles\Codewars.dir\isThisaTriangle.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\Codewars.dir
+  OBJECT_FILE_DIR = CMakeFiles\Codewars.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Codewars
@@ -69,7 +87,7 @@ build CMakeFiles/Codewars.dir/SameCaseCheck.c.obj: C_COMPILER__Codewars_Debug C$
 #############################################
 # Link the executable Codewars.exe
 
-build Codewars.exe: C_EXECUTABLE_LINKER__Codewars_Debug CMakeFiles/Codewars.dir/main.c.obj CMakeFiles/Codewars.dir/SameCaseCheck.c.obj
+build Codewars.exe: C_EXECUTABLE_LINKER__Codewars_Debug CMakeFiles/Codewars.dir/main.c.obj CMakeFiles/Codewars.dir/SameCaseCheck.c.obj CMakeFiles/Codewars.dir/removeExclamation.c.obj CMakeFiles/Codewars.dir/genRaangeofInt.c.obj CMakeFiles/Codewars.dir/isThisaTriangle.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Codewars.dir
