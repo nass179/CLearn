@@ -176,6 +176,30 @@ genRaangeofInt.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/genRaangeofInt.c.s
 .PHONY : genRaangeofInt.c.s
 
+isThisaTriangle.obj: isThisaTriangle.c.obj
+.PHONY : isThisaTriangle.obj
+
+# target to build an object file
+isThisaTriangle.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/isThisaTriangle.c.obj
+.PHONY : isThisaTriangle.c.obj
+
+isThisaTriangle.i: isThisaTriangle.c.i
+.PHONY : isThisaTriangle.i
+
+# target to preprocess a source file
+isThisaTriangle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/isThisaTriangle.c.i
+.PHONY : isThisaTriangle.c.i
+
+isThisaTriangle.s: isThisaTriangle.c.s
+.PHONY : isThisaTriangle.s
+
+# target to generate assembly for a file
+isThisaTriangle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/isThisaTriangle.c.s
+.PHONY : isThisaTriangle.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -199,6 +223,30 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/main.c.s
 .PHONY : main.c.s
+
+newtester.obj: newtester.c.obj
+.PHONY : newtester.obj
+
+# target to build an object file
+newtester.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/newtester.c.obj
+.PHONY : newtester.c.obj
+
+newtester.i: newtester.c.i
+.PHONY : newtester.i
+
+# target to preprocess a source file
+newtester.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/newtester.c.i
+.PHONY : newtester.c.i
+
+newtester.s: newtester.c.s
+.PHONY : newtester.s
+
+# target to generate assembly for a file
+newtester.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/newtester.c.s
+.PHONY : newtester.c.s
 
 removeExclamation.obj: removeExclamation.c.obj
 .PHONY : removeExclamation.obj
@@ -239,9 +287,15 @@ help:
 	@echo ... genRaangeofInt.obj
 	@echo ... genRaangeofInt.i
 	@echo ... genRaangeofInt.s
+	@echo ... isThisaTriangle.obj
+	@echo ... isThisaTriangle.i
+	@echo ... isThisaTriangle.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... newtester.obj
+	@echo ... newtester.i
+	@echo ... newtester.s
 	@echo ... removeExclamation.obj
 	@echo ... removeExclamation.i
 	@echo ... removeExclamation.s
