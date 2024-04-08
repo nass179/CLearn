@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\shann\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\shann\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\shann\Desktop\C\CLearn\Codewars
+CMAKE_SOURCE_DIR = C:\Users\henry\Desktop\CLearn\Codewars
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\shann\Desktop\C\CLearn\Codewars\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\henry\Desktop\CLearn\Codewars\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\shann\Desktop\C\CLearn\Codewars\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	C:\Users\shann\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\Users\shann\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\shann\Desktop\C\CLearn\Codewars\cmake-build-debug\CMakeFiles C:\Users\shann\Desktop\C\CLearn\Codewars\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\henry\Desktop\CLearn\Codewars\cmake-build-debug\CMakeFiles C:\Users\henry\Desktop\CLearn\Codewars\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\shann\Desktop\C\CLearn\Codewars\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\henry\Desktop\CLearn\Codewars\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,6 +127,30 @@ Codewars: cmake_check_build_system
 Codewars/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/build
 .PHONY : Codewars/fast
+
+NumOfStud.obj: NumOfStud.c.obj
+.PHONY : NumOfStud.obj
+
+# target to build an object file
+NumOfStud.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/NumOfStud.c.obj
+.PHONY : NumOfStud.c.obj
+
+NumOfStud.i: NumOfStud.c.i
+.PHONY : NumOfStud.i
+
+# target to preprocess a source file
+NumOfStud.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/NumOfStud.c.i
+.PHONY : NumOfStud.c.i
+
+NumOfStud.s: NumOfStud.c.s
+.PHONY : NumOfStud.s
+
+# target to generate assembly for a file
+NumOfStud.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Codewars.dir\build.make CMakeFiles/Codewars.dir/NumOfStud.c.s
+.PHONY : NumOfStud.c.s
 
 SameCaseCheck.obj: SameCaseCheck.c.obj
 .PHONY : SameCaseCheck.obj
@@ -281,6 +305,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Codewars
+	@echo ... NumOfStud.obj
+	@echo ... NumOfStud.i
+	@echo ... NumOfStud.s
 	@echo ... SameCaseCheck.obj
 	@echo ... SameCaseCheck.i
 	@echo ... SameCaseCheck.s

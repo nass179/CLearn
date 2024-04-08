@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Codewars.dir/NumOfStud.c.obj"
+  "CMakeFiles/Codewars.dir/NumOfStud.c.obj.d"
   "CMakeFiles/Codewars.dir/SameCaseCheck.c.obj"
   "CMakeFiles/Codewars.dir/SameCaseCheck.c.obj.d"
   "CMakeFiles/Codewars.dir/genRaangeofInt.c.obj"
