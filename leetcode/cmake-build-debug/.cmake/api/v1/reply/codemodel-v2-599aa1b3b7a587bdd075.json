@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "leetcode::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-leetcode-Debug-748feac509c19bc30358.json",
+					"jsonFile" : "target-leetcode-Debug-11cbc076e766d8cabc24.json",
 					"name" : "leetcode",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/shann/Desktop/C/CLearn/leetcode/cmake-build-debug",
-		"source" : "C:/Users/shann/Desktop/C/CLearn/leetcode"
+		"build" : "C:/Users/henry/Desktop/CLearn/leetcode/cmake-build-debug",
+		"source" : "C:/Users/henry/Desktop/CLearn/leetcode"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 6
 	}
 }
