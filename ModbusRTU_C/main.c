@@ -1,42 +1,70 @@
-#include <stdio.h>
-#include <modbus.h>
+#include <windows.h>
 
-int main() {
-    modbus_t *ctx;
-    uint16_t tab_reg[64]; // Assuming you want to read up to 64 holding registers
-    int rc;
+// Declare callback function for window messages
+LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
-    // Create a Modbus context
-    ctx = modbus_new_rtu("/dev/ttyUSB0", 9600, 'N', 8, 1);
-    if (ctx == NULL) {
-        fprintf(stderr, "Unable to create the libmodbus context\n");
-        return -1;
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+    // Register the window class
+    const char CLASS_NAME[] = "Sample Window Class";
+
+    WNDCLASS wc = {0};
+    wc.lpfnWndProc = WindowProc;
+    wc.hInstance = hInstance;
+    wc.lpszClassName = CLASS_NAME;
+
+    RegisterClass(&wc);
+
+    // Create the window
+    HWND hwnd = CreateWindowEx(
+            0,                              // Optional window styles
+            CLASS_NAME,                     // Window class
+            "ModbusRTU_Client",                // Window text
+            WS_OVERLAPPEDWINDOW,            // Window style
+
+            // Size and position
+            CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
+
+            NULL,       // Parent window
+            NULL,       // Menu
+            hInstance,  // Instance handle
+            NULL        // Additional application data
+    );
+
+    if (hwnd == NULL) {
+        return 0;
     }
 
-    // Connect to the Modbus slave
-    if (modbus_connect(ctx) == -1) {
-        fprintf(stderr, "Connection failed: %s\n", modbus_strerror(errno));
-        modbus_free(ctx);
-        return -1;
-    }
+    // Show the window
+    ShowWindow(hwnd, nCmdShow);
 
-    // Read holding registers starting at address 0, up to 10 registers
-    rc = modbus_read_registers(ctx, 0, 10, tab_reg);
-    if (rc == -1) {
-        fprintf(stderr, "Error reading holding registers: %s\n", modbus_strerror(errno));
-        modbus_close(ctx);
-        modbus_free(ctx);
-        return -1;
+    // Run the message loop
+    MSG msg = {0};
+    while (GetMessage(&msg, NULL, 0, 0)) {
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
     }
-
-    // Print out the read values
-    for (int i = 0; i < rc; i++) {
-        printf("Holding register %d: %d\n", i, tab_reg[i]);
-    }
-
-    // Disconnect and free the context
-    modbus_close(ctx);
-    modbus_free(ctx);
 
     return 0;
+}
+
+// Window Procedure callback function
+LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
+    switch (uMsg) {
+        case WM_DESTROY:
+            PostQuitMessage(0);
+            return 0;
+
+        case WM_PAINT: {
+            PAINTSTRUCT ps;
+            HDC hdc = BeginPaint(hwnd, &ps);
+            RECT rect;
+            GetClientRect(hwnd, &rect);
+            DrawText(hdc, "Hello, Windows!", -1, &rect, DT_LEFT | DT_TOP | DT_SINGLELINE);
+            EndPaint(hwnd, &ps);
+            return 0;
+        }
+
+        default:
+            return DefWindowProc(hwnd, uMsg, wParam, lParam);
+    }
 }

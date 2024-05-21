@@ -1,3 +1,0 @@
-C:/Users/shann/Desktop/C/CLearn/ModbusRTU_C/cmake-build-debug/CMakeFiles/ModbusRTU_C.dir
-C:/Users/shann/Desktop/C/CLearn/ModbusRTU_C/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/shann/Desktop/C/CLearn/ModbusRTU_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
